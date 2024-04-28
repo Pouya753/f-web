@@ -1,0 +1,35 @@
+.body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/bg img/cabin-river-forest-nature-sunset-scenery-4k-wallpaper-uhdpaper.com-892@0@f.jpg");
+  background-size: cover;
+}
+.for{
+  width: 400px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 24px;
+  backdrop-filter: blur(9px) grayscale(60%);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px white;
+}
+.a{
+  text-decoration:unset;
+  margin-top: 8px;
+}
+.rem{
+  margin: 8px;
+}
+.in{background:whitesmoke;
+}
+// mobile css========================================================================================================
+@media (max-width: 768px) {
+.body{
+  background-image: url("/assets/bg img/cabin-river-forest-nature-sunset-scenery-phone-wallpaper-4k-uhdpaper.com-892@0@f.jpg");
+  background-repeat:no-repeat;
+}
+.for{ width: 300px}
+}
