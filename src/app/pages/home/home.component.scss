@@ -51,10 +51,17 @@
   background-color: #007bff;
 }
 
+.carousel {
+  background:transparent!important;
+  position: relative;
+}
 
-
-
-
+::ng-deep{
+  .carousel {
+    background: brown !important;
+    position: relative;
+  }
+}
 @media (max-width:768px) {
   .log{
     color: red;

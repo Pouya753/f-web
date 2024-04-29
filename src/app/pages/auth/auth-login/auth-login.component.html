@@ -1,15 +1,17 @@
-<div class="div-expand-md body">
+<div class="div-expand-md body" [formGroup]="loginForm">
   <form class="for">
     <div class="">
       <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
       <div class="col-sm-10">
-        <input type="email" class="form-control in" id="inputEmail3" required placeholder="exampel@gmail.com">
+        <input type="email" class="form-control in" id="inputEmail3" formControlName="email" name="email" required
+               placeholder="exampel@gmail.com">
       </div>
     </div>
     <div class="">
       <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
       <div class="col-sm-10">
-        <input type="password" class=" pass form-control in" id="inputPassword3" required placeholder="password">
+        <input type="password" class=" pass form-control in" id="inputPassword3" formControlName="password" required
+               placeholder="password">
       </div>
     </div>
     <div class="row">
@@ -22,16 +24,14 @@
         </div>
       </div>
     </div>
-    <button type="submit" class="btn btn-primary">log in</button>
+    <button (click)="sendData()" [disabled]="loginForm.invalid"
+            type="submit" class="btn btn-primary">log in
+    </button>
     <div class="d-flex justify-content-between">
       <a class="link active a">forget password?</a>
       <a class="link active a" routerLink="/auth/signup">sign up</a>
     </div>
   </form>
-
-
-
-
 
 
 </div>
