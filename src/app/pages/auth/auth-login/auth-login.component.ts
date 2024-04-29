@@ -20,7 +20,6 @@ export class AuthLoginComponent {
       password: new FormControl('', [Validators.required])
     })
   }
-
   sendData() {
     let object = {
       email: this.loginForm.controls["email"].value,

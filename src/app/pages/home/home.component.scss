@@ -50,15 +50,9 @@
   height: 200px;
   background-color: #007bff;
 }
-
-.carousel {
-  background:transparent!important;
-  position: relative;
-}
-
 ::ng-deep{
   .carousel {
-    background: brown !important;
+    background:black !important;
     position: relative;
   }
 }
